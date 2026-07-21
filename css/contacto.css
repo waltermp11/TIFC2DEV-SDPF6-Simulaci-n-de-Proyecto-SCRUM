@@ -54,7 +54,15 @@ body {
 
 .info-list li {
     list-style: none;
+    background-color: var(--background-button);
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
 }
+
+.info-list li:hover {
+    transform: translateY(-8px); /* Eleva el elemento */
+}
+
 
 /* article-contacto-usuario*/
 
