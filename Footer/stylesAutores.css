@@ -20,9 +20,14 @@
     padding: 40px 60px 20px;
     margin-top: 50px;
 }
+.authors-list {
+    list-style: none; /* Elimina los puntos/viñetas por defecto */
+    padding: 0;
+    margin: 0;
+}
 
 .footer-content {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -43,4 +48,22 @@
     text-align: center;
     margin-top: 30px;
     padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 20px 15px; 
+    }
+
+    .footer-content {
+        flex-direction: column; 
+        gap: 30px;              
+        text-align: center;     
+    }
+
+    .footer-project, 
+    .footer-authors, 
+    .footer-contact {
+        width: 100%;             
+    }
 }
