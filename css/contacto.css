@@ -1,0 +1,24 @@
+:root {
+
+--background: #fefffc;
+--background-cards- : #8E9BAF;
+--background-button:#2A374F;
+--background-button-hover:#4192D9;
+--letter-white:#fefffc;
+--letter-black: black;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
