@@ -1,0 +1,69 @@
+:root {
+    --background: #fefffc;
+    --background-cards: #8E9BAF;
+    --background-button: #2A374F;
+    --background-button-hover: #4192D9;
+    --letter-white: #fefffc;
+    --letter-black: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--background-button);
+    color: var(--letter-white);
+    padding: 40px 60px 20px;
+    margin-top: 50px;
+}
+.authors-list {
+    list-style: none; /* Elimina los puntos/viñetas por defecto */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer h2, 
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--background-cards);
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 20px 15px; 
+    }
+
+    .footer-content {
+        flex-direction: column; 
+        gap: 30px;              
+        text-align: center;     
+    }
+
+    .footer-project, 
+    .footer-authors, 
+    .footer-contact {
+        width: 100%;             
+    }
+}

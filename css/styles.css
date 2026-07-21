@@ -2,6 +2,7 @@
 
 --background: #fefffc;
 --background-cards : #8E9BAF;
+--background-cards- : #8E9BAF;
 --background-button:#2A374F;
 --background-button-hover:#4192D9;
 --letter-white:#fefffc;
@@ -113,3 +114,6 @@
         font-size:1rem;
     }
 }
+
+
+
