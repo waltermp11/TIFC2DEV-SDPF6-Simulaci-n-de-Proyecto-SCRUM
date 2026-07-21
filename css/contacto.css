@@ -16,6 +16,10 @@
 
 }
 
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
 /*section de contacto*/
 
 .section-contacto {
