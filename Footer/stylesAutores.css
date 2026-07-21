@@ -1,0 +1,46 @@
+:root {
+    --background: #fefffc;
+    --background-cards: #8E9BAF;
+    --background-button: #2A374F;
+    --background-button-hover: #4192D9;
+    --letter-white: #fefffc;
+    --letter-black: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--background-button);
+    color: var(--letter-white);
+    padding: 40px 60px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer h2, 
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--background-cards);
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+}
