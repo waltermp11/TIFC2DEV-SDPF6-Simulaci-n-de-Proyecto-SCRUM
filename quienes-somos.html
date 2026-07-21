@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiénes Somos — NODO</title>
+
+    <meta name="description" content="Conocé al equipo detrás del blog sobre Inteligencia Artificial.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles-somos.css">
+</head>
+
+<body>
+
+    <!-- === CABECERA EN CAJONES (Quiénes Somos & Por qué existe este sitio) === -->
+    <header class="section">
+        <div class="wrap">
+            <div class="info-grid">
+                
+                <!-- CAJÓN 1: Quiénes Somos -->
+                <article class="card">
+                    <div class="card-content">
+                        <span class="eyebrow card-eyebrow">Quiénes Somos</span>
+                        <h1 class="card-title">Un equipo, un mismo backlog.</h1>
+                        <p class="card-excerpt">Somos el equipo detrás de este blog especializado en Inteligencia Artificial. Aunque el proyecto nació como parte del laboratorio AD-07 de TIFC, implementamos la metodología ágil SCRUM, trabajando mediante sprints y asegurando entregas continuas y revisables en cada etapa.</p>
+                    </div>
+                </article>
+
+                <!-- CAJÓN 2: Por qué existe este sitio -->
+                <article class="card">
+                    <div class="card-content">
+                        <span class="eyebrow card-eyebrow">Por qué existe este sitio</span>
+                        <h2 class="card-title" style="font-size: 1.8rem;">De ejercicio de clase a blog real</h2>
+                        <p class="card-excerpt">Este sitio comenzó como el laboratorio «BlogSite», pero decidimos llevarlo al siguiente nivel y tratarlo como un proyecto real. El equipo trabajó de forma colaborativa siguiendo el marco ágil SCRUM de punta a punta, asumiendo el reto de un cliente ficticio que necesitaba un blog profesional, intuitivo y 100% responsive, gestionando desde la planificación del backlog hasta el despliegue oficial en GitHub.</p>
+                        <p class="card-excerpt">Elegimos la Inteligencia Artificial como tema porque es algo que estamos estudiando activamente y porque queríamos aprender a explicarla con nuestras propias palabras, no solo a usarla.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- === SECCIÓN DE ROLES EN UN CAJÓN CENTRADO === -->
+    <section class="section">
+        <div class="wrap center-section">
+            <article class="card centered-card">
+                <div class="card-content">
+                    <span class="eyebrow card-eyebrow">Roles del equipo</span>
+                    <h2 class="card-title" style="font-size: 1.8rem;">Cómo nos organizamos</h2>
+                    <ul class="role-list">
+                        <li>
+                            <span class="tag">Product Owner</span>
+                            <p style="margin:0">Define el alcance del blog, prioriza el backlog y aclara los requisitos con el cliente del laboratorio.</p>
+                        </li>
+                        <li>
+                            <span class="tag">SCRUM Master</span>
+                            <p style="margin:0">Facilita las ceremonias del equipo, gestiona el sprint y remueve obstáculos para que el desarrollo avance sin fricción.</p>
+                        </li>
+                        <li>
+                            <span class="tag">Desarrolladores</span>
+                            <p style="margin:0">Implementan las tareas técnicas del backlog: estructura HTML, estilos CSS, navegación y despliegue en GitHub.</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- === SECCIÓN DE METODOLOGÍA SCRUM === -->
+    <section class="section">
+        <div class="wrap split reverse">
+            <div class="split-media card" style="height: auto; color: var(--letter-white);">
+                <div class="card-content">
+                    <h3>Nuestra forma de trabajar</h3>
+                    <p>Registramos cada tarea del laboratorio como Issue en GitHub Projects, la asignamos a una persona del equipo y la movemos por el tablero a medida que avanza: por hacer, en progreso y hecho.</p>
+                </div>
+            </div>
+            <div class="split-text">
+                <span class="eyebrow">Metodología</span>
+                <h2>SCRUM aplicado a un blog</h2>
+                <p>Dividimos el trabajo en sprints cortos con objetivos claros: primero la estructura y el repositorio, luego el diseño y la navegación, y finalmente el contenido de cada página. Cada avance se revisa en equipo antes de darlo por terminado.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                const open = links.classList.toggle('open');
+                toggle.setAttribute('aria-expanded', open);
+            });
+        }
+    </script>
+</body>
+
+</html>
