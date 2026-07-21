@@ -1,19 +1,19 @@
 :root {
 
 --background: #fefffc;
+--background-cards : #8E9BAF;
 --background-cards- : #8E9BAF;
 --background-button:#2A374F;
 --background-button-hover:#4192D9;
 --letter-white:#fefffc;
 --letter-black: black;
-
 }
 
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
 }
 
 .nunito{
@@ -87,3 +87,104 @@ body{
 .boton:hover{
     background-color: var(--background-button-hover);
 }
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background-color:#2A374F;
+}
+
+.logo h2{
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#4192D9;
+}
+
+/* Banner */
+.banner{
+    height:90vh;
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')
+    center/cover;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.banner-content{
+    max-width:700px;
+    padding:20px;
+}
+
+.banner-content h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.banner-content p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background-color:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background-color:#4192D9;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .banner-content h1{
+        font-size:2rem;
+    }
+
+    .banner-content p{
+        font-size:1rem;
+    }
+}
+
+
+
